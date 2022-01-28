@@ -1,0 +1,104 @@
+.header{
+    color: #fff;
+    position: relative;
+    height: 125px;
+    z-index: 5;
+    &__inner{
+        position: fixed;
+        transition: 0.4s;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__content{
+        padding: 15px 0;
+        background-color:  #f3f3f3;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 5;
+    }
+    &__input{
+        border: none;
+        border-bottom: 1px solid #000;
+        background-color: #f3f3f3;
+        width: 10%;
+        font-size: 22px;
+        margin-left: 30px;
+        
+    }
+    &__person{
+       display: flex;
+       align-items: center;
+       justify-content: space-around;
+       cursor: pointer;
+       margin-right: 30px;
+        
+    }
+    &__person-name{
+        color: #000;
+        font-size: calc(15px + 1vmin);
+        margin-right: 15px;
+    }
+    &__person-logo{
+        border-radius: 50%;
+        background-color: #c4c4c4;
+        width: calc(30px + 3vmin);
+        height: calc(30px + 3vmin);
+        margin-bottom: 3px;
+        cursor: pointer;
+        color: #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: calc(15px + 1vmin);
+    }
+    &__filter{
+        background-color: #fff;
+        width: 100%;
+        color: #000;
+        border-bottom: 2px solid #000;
+    }
+    &__filter-content{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 5;
+    }
+    &__filter-title{
+        margin: 5px 0 5px 0;
+        margin-left: 30px;
+        font-size: calc(12px + 1vmin);
+        font-weight: 400;
+    }
+    &__filter-open{
+        margin-right: 30px;
+        margin-top: 7px;
+        cursor: pointer;
+    }
+    &__filter-img{
+        width: 25px;
+        height: 25px;
+    }
+    &__filter-inputs{
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        margin-left: 60px;
+        margin-top: 20px;
+        z-index: 1;
+    }
+    &__filter-item{
+        width: 25%;
+        display: inline-block;
+    }
+    &__filter-input{
+        border: none;
+        border-bottom: 1px solid #000;
+        background-color: #fff;
+        width: 45%;
+        font-size: 22px;
+        margin-bottom: 30px;
+    }
+}
