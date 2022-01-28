@@ -10,9 +10,7 @@ export default function useHover(ref) {
      if (!ref.current) {
          return
      }
-     console.log(ref);
      const node = ref.current
-     console.log(node);
      node.addEventListener('mouseenter', on)
      node.addEventListener('mousemove', on)
      node.addEventListener('mouseleave', off)
@@ -23,7 +21,5 @@ export default function useHover(ref) {
         node.removeEventListener('mouseleave', off)
      }
     }, []);
-    
-console.log(hovering);
     return hovering
 }
