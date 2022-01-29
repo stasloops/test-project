@@ -10,10 +10,10 @@ const App = () => {
   const hovering = useHover(ref)
   return (
     <div className="app">
-      <div ref={ref} className='menu__hover'>
-        <Menu hovering={hovering}/>
+      <div ref={ref} className='ref'>
+        <Menu />
       </div>
-      <div  style={{width: hovering === true ? '80%' : '93%'}} className='section'>
+      <div style={{width: hovering === true ? '80%' : '90%'}} className='section'>
         <Header hovering={hovering}/>
         <Main />
       </div>

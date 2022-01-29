@@ -5,6 +5,8 @@ const Menu = () => {
   return (
     <menu className='menu'>
         <div className='menu__inner'>
+          <div className='menu__content'>  
+          <div className='menu__content-block'>
             <div className='menu__logo'>
                 <a className='menu__logo-item'>LOGO</a>
                 <div className='menu__logo-name'><div className='menu__transition'>NAME COMPANY</div></div>
@@ -27,6 +29,8 @@ const Menu = () => {
                     <div className='menu__item-name'><div className='menu__transition'>Аналитика</div></div>
                 </li>
             </ul>
+          </div> 
+          </div>  
         </div>
     </menu>
   )

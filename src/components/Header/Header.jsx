@@ -20,13 +20,13 @@ const Header = ({hovering}) => {
 
   return(
    <header className='header'>
-     <div style={{width: hovering === true ? '80%' : '93%'}} className='header__inner'>
+     <div style={{width: hovering === true ? '80%' : '90%'}} className='header__inner'>
         <div className='header__content'>
-          <input className='header__input' placeholder='Поиск...'/>
-          <div className='header__person'>
+            <input className='header__input' placeholder='Поиск...'/>
+         <div className='header__person'>
             <div className="header__person-name">Петров В.A.</div>
             <div className="header__person-logo"><span>В.А</span></div>
-          </div>
+         </div>  
         </div>
         <div className='header__filter'>
           <div className='header__filter-content'>

@@ -1,64 +1,56 @@
 .header{
     color: #fff;
-    position: relative;
-    height: 125px;
     z-index: 5;
     &__inner{
-        position: fixed;
         transition: 0.4s;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        position: fixed;
+        right: 0;
+        background-color:  #f3f3f3;
     }
     &__content{
-        padding: 15px 0;
-        background-color:  #f3f3f3;
-        width: 100%;
         display: flex;
-        align-items: center;
         justify-content: space-between;
-        z-index: 5;
+        align-items: center;
     }
     &__input{
         border: none;
         border-bottom: 1px solid #000;
         background-color: #f3f3f3;
-        width: 10%;
+        width: 200px;
         font-size: 22px;
         margin-left: 30px;
-        
     }
     &__person{
-       display: flex;
-       align-items: center;
-       justify-content: space-around;
-       cursor: pointer;
-       margin-right: 30px;
-        
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        cursor: pointer;
+        margin: 5px 30px 5px 0;
     }
     &__person-name{
         color: #000;
         font-size: calc(15px + 1vmin);
-        margin-right: 15px;
+        margin-right: 10px;
     }
     &__person-logo{
         border-radius: 50%;
         background-color: #c4c4c4;
-        width: calc(30px + 3vmin);
-        height: calc(30px + 3vmin);
+        width: 70px;
+        height: 70px;
         margin-bottom: 3px;
         cursor: pointer;
         color: #000;
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: calc(15px + 1vmin);
+        font-size: 24px;
     }
     &__filter{
         background-color: #fff;
         width: 100%;
         color: #000;
         border-bottom: 2px solid #000;
+        z-index: 100;
     }
     &__filter-content{
         display: flex;

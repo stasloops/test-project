@@ -1,49 +1,69 @@
 .menu{
-   background-color: #f3f3f3f3;
    margin: 0;
    padding: 0;
-   padding-top: 10px;
-   width: 7%;
    height: 100vh;
-   position: fixed;
    z-index: 6;
    transition: 0.4s;
-   border-right: 2px solid #000;
    &__inner{
-       display: flex;
-       flex-direction: column;
-       padding-left: calc(14px + 1vmin);
-   }
+       width: 10%;
+       height: 100vh;
+       background-color: #f3f3f3f3;
+       transition: 0.4s;
+       position: fixed;
+       &:hover{
+        transition: 0.4s;
+        width: 20%;
+       }
+    }
+    &__content{
+        height: 100vh;
+        background-color: #f3f3f3f3;
+        border-right: 2px solid #000;
+        transition: 0.4s;
+       
+    }
+    &__content-block{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: 1s;
+    }
+    &:hover &__content-block{
+        width: 100px;
+        transition: 1s;
+    }
    &__logo{
+       margin-top: 20px;
        border-radius: 50%;
        background-color: #c4c4c4c4;
-       width: calc(30px + 3vmin);
-       height: calc(30px + 3vmin);
+       width: 65px;
+       height: 65px;
        display: flex;
        align-items: center;
        justify-content: center;
        cursor: pointer;
    }
    &__logo-item{
-       font-size: calc(15px + 1vmin);
+       font-size: 24px;
        font-weight: 700; 
    }
    &__logo-name{
     position: absolute;
     width: 300px;
-    font-size: calc(15px + 1vmin);
+    font-size: 22px;
     transition: 0.4s;
     cursor: pointer;
-    transition: 0.4s;
     left: 0px;
     opacity: 0;
     color: #000;
    }
+
    &:hover  &__logo-name{
     transition: 0.4s;
     left: 100px;
     opacity: 1;
-}
+    }
    &__items{
         padding: 0;
         margin-top: 75px; 
@@ -57,8 +77,8 @@
     &__item-logo{
         border-radius: 50%;
         background-color: #c4c4c4c4;
-        width: calc(30px + 3vmin);
-        height: calc(30px + 3vmin);
+        width: 65px;
+        height: 65px;
         margin-bottom: 20px;
         cursor: pointer;
     }
@@ -67,8 +87,8 @@
     }
     &__item-name{
         position: absolute;
-        margin-top: 14px;
-        font-size: calc(15px + 1vmin);
+        margin-top: 17px;
+        font-size: 24px;
         transition: 0.4s;
         cursor: pointer;
         transition: 0.4s;
@@ -80,14 +100,10 @@
     }
     &:hover  &__item-name{
         transition: 0.4s;
-        left: 140px;
+        left: 100px;
         opacity: 1;
     }
     &:hover  &__transition{
        display: block;
-    }
-    &:hover{
-        width: 20%;
-        transition: 0.4s;
     }
 }
