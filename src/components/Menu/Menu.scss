@@ -5,14 +5,12 @@
    z-index: 6;
    transition: 0.4s;
    &__inner{
-       width: 10%;
        height: 100vh;
        background-color: #f3f3f3f3;
        transition: 0.4s;
        position: fixed;
        &:hover{
         transition: 0.4s;
-        width: 20%;
        }
     }
     &__content{

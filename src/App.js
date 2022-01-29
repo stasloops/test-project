@@ -11,7 +11,7 @@ const App = () => {
   return (
     <div className="app">
       <div ref={ref} className='ref'>
-        <Menu />
+        <Menu hovering={hovering}/>
       </div>
       <div style={{width: hovering === true ? '80%' : '90%'}} className='section'>
         <Header hovering={hovering}/>

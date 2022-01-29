@@ -1,5 +1,5 @@
 .header{
-    color: #fff;
+    color: #000;
     z-index: 5;
     &__inner{
         transition: 0.4s;
@@ -28,7 +28,7 @@
         margin: 5px 30px 5px 0;
     }
     &__person-name{
-        color: #000;
+       
         font-size: calc(15px + 1vmin);
         margin-right: 10px;
     }
@@ -48,9 +48,7 @@
     &__filter{
         background-color: #fff;
         width: 100%;
-        color: #000;
         border-bottom: 2px solid #000;
-        z-index: 100;
     }
     &__filter-content{
         display: flex;
